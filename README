@@ -1,0 +1,16 @@
+Slow Request Notification is a Rails plugin that will send email notifications
+when a request in your Rails app is slower than say 10 seconds.
+
+The plugin is to be used to catch situations like a lot of users signing up to 
+your app, entering lots of data and maybe you forgot to add an index to your
+database :-)
+
+The following things are configurable:
+
+* the request time limit that will cause emails to be sent when it is exceeded
+* the sender of the emails
+* the recepients of the emails
+* the subject of the mails
+
+The plugin is very much inspired by Jamis Buck's excellent Exception Notifier
+plugin.
